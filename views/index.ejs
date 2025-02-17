@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="main w-full text-white min-h-screen bg-[#242424f5]">
+        <div class="forms p-10">
+            <h1 class="text-3xl mb-3 tracking-tighter">Task Manager</h1>
+            <form action="/create" method="post">
+                <input class="block px-5 w-full outline-none rounded-md py-2 bg-[#404040f5]" type="text" placeholder="Title here" name="title">
+                <textarea class="block mt-2 px-5 w-full outline-none rounded-md py-2 size-40 resize-none bg-[#404040f5]" name="details" placeholder="Task details here..."></textarea>
+                <input class="mt-2 bg-blue-600 px-5 py-2 rounded-md" type="submit" value="Create Task">
+            </form>
+        </div>
+        <div class="tasks px-10 flex gap-3 flex-wrap">
+            <% if(files.length > 0){ %>
+                <% files.forEach(function(val){ %>
+                    <div class="task w-80 rounded-md px-3 py-4 bg-[#404040f5]">
+                        <h1 class="text-white text-3xl tracking-tighter"><%= val %></h1>
+                        <div class="mt-4 justify-between item-center flex">
+                            <a href="/file/<%= val %>" class="text-blue-500 inline-block">Read More.</a>
+                            <a href="/delete/<%= val %>" class="text-red-500 inline-block">Delete</a>
+                        </div>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <h3>No tasks yet...</h3>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
