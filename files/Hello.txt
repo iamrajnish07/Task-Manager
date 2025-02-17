@@ -1,13 +1,1 @@
-2/16/2025 21:04:08	Animesh Kumar 	16. Number Guessing Game
-2/17/2025 9:22:19	Anisha Kumari jha 	Studentinfromationsystem
-2/17/2025 9:22:36	Anushka richa	Studentinformationsystem
-2/15/2025 21:31:00	Chandraprakash Nyaupane	Student Information System
-2/14/2025 14:26:11	Gopal Kumar jha 	Tic-Tac-Toe game
-2/15/2025 22:29:19	Harsh chaubey 	Tic tac Toe game 
-2/16/2025 0:29:02	Jiwan Bogati	Number Guessing Game 
-2/15/2025 19:31:48	Khushi Chauhan 	Library Management
-2/15/2025 22:32:03	Megha	Weather information system
-2/17/2025 9:25:29	Nandini Bhardwaj	Hotel Management system 
-2/15/2025 21:42:01	Nishan kharal 	Student information system 
-2/17/2025 7:47:28	Nitin Kumar 	Brick Breaker Game
-2/16/2025 14:22:13	Palak Astwal 	Library Management 
+Node.js & Express.js backend for a task manager app using real-time file system (FS) operations to create and manage task details stored in TXT files.
